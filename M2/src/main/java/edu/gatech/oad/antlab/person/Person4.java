@@ -31,7 +31,12 @@ public class Person4 {
      */
     private String calc(String input) {
       //Person 4 put your implementation here
-      return null;
+      char[] eachLetter = input.split("");
+        String newInput = "";
+        for (int i = 0; i < eachLetter.length; i++) {
+            newInput += eachLetter[i]+1;
+        }
+      return newInput;
     }
     
     /**
@@ -44,6 +49,12 @@ public class Person4 {
      */
     public String toString(String input) {
       return name + calc(input);
+    }
+
+    public static void main (String[] args) {
+      Person4 hi = new Person4("Amy");
+      System.out.println(hi);
+
     }
 
 }
