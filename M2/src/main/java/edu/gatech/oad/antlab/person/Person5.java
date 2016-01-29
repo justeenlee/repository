@@ -30,8 +30,11 @@ public class Person5 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 5 put your implementation here
-	  return null;
+		String rotate = "";
+	  for (int i = 0; i < input.size(); i++) {
+	  	rotate += input.substring((i + 2) % input.size(), (i + 3) % input.size());
+	  }
+	  return rotate;
 	}
 	
 	/**
