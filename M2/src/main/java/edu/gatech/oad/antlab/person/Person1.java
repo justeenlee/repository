@@ -32,7 +32,7 @@ public class Person1 {
 	private String calc(String input) {
 	  //Person 1 put your implementation here
 	    String temp = input;
-	    return temp.subString(2, input.length()-2) + temp.subString(0, 2);
+	    return temp.subString(2, input.length()-2) + temp .subString(0, 2);
 	}
 	
 	/**
