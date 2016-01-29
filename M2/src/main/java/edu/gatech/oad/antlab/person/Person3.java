@@ -5,6 +5,7 @@ package edu.gatech.oad.antlab.person;
  *  reversed string
  *
  *  @author  Bob
+ *  @author Cole Bowers - cbowers40
  *  @version 1.1
  */
 public class Person3 {
