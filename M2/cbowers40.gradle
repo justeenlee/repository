@@ -6,12 +6,8 @@ apply plugin: 'application'
 apply plugin: 'findbugs'
 apply plugin: 'checkstyle'
 
-task hello << {
-   println 'Hello World'
-}
 
-
-//set up some variables
+//Variables
 sourceCompatibility = 1.8
 version = '1.0'
 mainClassName='AntLabMain'
@@ -22,8 +18,8 @@ jar  {
 
      attributes  'Implementation-Title' : 'Gradle Quickstart' ,
                  'Implementation-Version' : version,
-                 'Main-Class' : 'AntLabMain',
-                 'Class-Path' : 'lib/resources.jar'
+                 'Main-Class': 'edu.gatech.oad.antlab.pkg1.AntLabMain'
+                 //'Class-Path' : 'lib/resources.jar'
 
     }
     destinationDir = file(".")
