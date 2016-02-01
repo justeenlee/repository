@@ -54,6 +54,7 @@ public class Person2 {
                 counter--;
             }
         }
+        return newInput;
 	}
 	/**
 	 * Return a string rep of this object
