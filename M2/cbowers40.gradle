@@ -10,6 +10,7 @@ mainClassName = 'AntLabMain'
 
 //Define the contents of the jar file
 jar  {
+  baseName = 'cbowers40'
   manifest {
 
      attributes  'Implementation-Title' : 'Gradle Quickstart' ,
