@@ -4,9 +4,10 @@ defaultTasks 'jar'
 
 jar {
 	baseName = 'zli343'
-	version = '3.0'
+	version = '4.0'
 	manifest {
-		attributes 'Main-Class': 'edu.gatech.oad.antlab.pkg1.AntLabMain'
+		attributes 'Main-Class': 'edu.gatech.oad.antlab.pkg1.AntLabMain',
+        'Class-Path': '../../lib/resources.jar'
 	}
 }
 
