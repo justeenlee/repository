@@ -15,7 +15,8 @@ jar {
   manifest {
      attributes  'Implementation-Title' : 'Gradle Quickstart' ,
                  'Implementation-Version' : version,
-                 'Main-Class': 'edu.gatech.oad.antlab.pkg1.AntLabMain'
+                 'Main-Class': 'edu.gatech.oad.antlab.pkg1.AntLabMain',
+                 'Class-Path': '../../lib/resources.jar'
     }
     destinationDir = file(".")
     archiveName = 'hello.jar'
@@ -28,6 +29,7 @@ dependencies {
     compile files('lib/resources.jar', )
     compile group: 'org.hibernate', name: 'hibernate-core', version: '3.6.7.Final'
 	  testCompile group: 'junit', name: 'junit', version: '4.+'
+	runtime files('lib/resources.jar')
 }
 
 //setup a location for repositories of any libraries that need to be downloaded
